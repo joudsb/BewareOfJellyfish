@@ -1,0 +1,102 @@
+/* importing fonts */
+@font-face {
+    font-family: swimming-pool;
+    src: url(./fonts/swimming-pool-font/SwimmingPoolDemo-vm6VD.ttf);
+}
+@font-face {
+    font-family: alloy-ink ;
+    src: url(./fonts/a-alloy-ink-font/AlloyInk-nRLyO.ttf);
+}
+/* title "Beware of Jellyfish */
+header{
+    font-family: 'swimming-pool';
+    font-size: 80px;
+    padding-top: 40px;
+    text-align: center;
+}
+/* html page */
+html{
+    background-image: url(./images/newbg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+/* game styles */
+#game{
+    position: absolute;
+    top: 38.5%;
+    left: 51%;
+    right: 30%;
+    width: 590px;
+    height: 250px;
+    border-radius: 5px;
+    border: 5px solid 	#8a2744;
+    background-color:	#599481;
+    color: 	#f0e33f;
+}
+/* spongebob */
+#character{
+    padding-top: 145px; 
+    width: 80px;
+    margin-left: 30px;
+}
+/* jumping up and down */
+.animate{
+    animation: jump 700ms;
+}
+@keyframes jump{
+    0%{padding-top:145px;}
+    30%{padding-top:80px;}
+    70%{padding-top: 80px;}
+    100%{padding-top:145px;}
+}
+/* score count */
+#score{
+    position: absolute;
+    right: 10px;
+    font-weight: bold;
+    font-size: larger;
+    padding-top: 10px;
+    font-family: 'alloy-ink';
+    color: black;
+}
+/* jellyfish */
+#block{
+    width: 50px;
+    height: 40px;
+    position: absolute;
+    top: 205px;
+    left: 432px;
+
+}
+/* moving infinitely */
+.start{
+    animation: block 2s linear infinite;
+}
+@keyframes block{
+    0%{left:480px;}
+    100%{left:0px;}
+}
+/* start button */
+#start{
+    position: absolute;
+    left: 235px;
+    top: 90px;
+    border: 3px solid 	#b47a3d;
+    padding: 5px;
+    border-radius: 5px;
+    background-color: #b47a3d;
+    font-family: "alloy-ink";
+    font-size: xx-large;
+}
+/* play again button */
+#reset{
+    position: absolute;
+    left: 200px;
+    top: 155px;
+    border: 3px solid 	#b47a3d;
+    padding: 5px;
+    border-radius: 5px;
+    background-color: #b47a3d;
+    font-family: "alloy-ink";
+    font-size: xx-large;
+}
